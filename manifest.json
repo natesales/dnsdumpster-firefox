@@ -1,0 +1,30 @@
+{
+
+  "description": "Unofficial DNSDumpster addon for firefox.",
+  "manifest_version": 2,
+  "name": "DNSDumpster",
+  "version": "1.0",
+  "homepage_url": "https://nate.to/projects/dnsdumpster",
+  "icons": {
+    "48": "icons8-trash.svg"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://dnsdumpster.com/*"],
+      "js": ["dnsdumpster.js"]
+    }
+  ],
+
+  "browser_action": {
+    "default_icon": "icons8-trash.svg"
+  }
+}
