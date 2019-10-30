@@ -17,10 +17,6 @@ Trash icon by https://icons8.com (From the GitHub student dev pack).
 
 I do not own nor have any affiliation with DNSDumpster. Please keep in mind that this addon will make a request to dnsdumpster.com with the `site` url parameter which will make you distinguishable from users that are not using this addon.
 
-
-
-
-
 function makeSpan(asn) {
   return "<span style='' oncontextmenu='window.open(\"https://bgp.he.net/" + asn + "\");'>" + asn + "</span>"
 }
