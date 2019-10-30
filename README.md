@@ -8,6 +8,9 @@ I wrote a simple firefox addon to open up the site and search the current tab's 
 It also includes an automatic search feature, where going to https://dnsdumpster.com?site=example.com will automatically search example.com for you.
 
 
+### Downloading
+The addon is available from the Mozilla Addon Store https://addons.mozilla.org/en-US/firefox/addon/dnsdumpster/. Development versions might also be available from the releases page, but the most up to date will always be on the mozilla site above.
+
 
 ### Credits
 Trash icon by https://icons8.com (From the GitHub student dev pack).
