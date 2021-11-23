@@ -1,8 +1,5 @@
-let url = new URL(window.location.href);
-let domain = url.searchParams.get("site");
-
-if (domain != null) {
+let domain = window.location.hash.substring(1);
+if (domain) {
     document.getElementById("regularInput").value = domain;
-    let forms = document.getElementsByTagName("FORM");
-    forms[0].submit();
+    document.getElementsByTagName("FORM")[0].submit();
 }
