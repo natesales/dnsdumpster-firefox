@@ -1,5 +1,5 @@
 {
-  "description": "Unofficial DNSDumpster addon for firefox.",
+  "description": "(Unofficial) DNSDumpster addon for Firefox",
   "manifest_version": 2,
   "name": "DNSDumpster",
   "version": "0.0.1",

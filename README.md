@@ -1,10 +1,12 @@
-# DNSDumpster for Firefox
+# (Unofficial) DNSDumpster addon for Firefox
 
-DNSDumpster is a great tool for investigating websites and looking for common DNS entries. I've been using it so much that going to the site, entering the domain (without the protocol or any trailing endpoints), and pressing enter has become a chore.
+### Functionality
 
-I wrote a simple firefox addon to open up the site and search the current tab's domain for you.
+Click the green extension icon to open the current domain (domain.TLD only) in DNSDumpster
 
-It also includes an automatic search feature, where going to https://dnsdumpster.com?site=example.com will automatically search example.com for you.
+_...or..._
+
+Visit https://dnsdumpster.com/#example.com to autofill the domain search form.
 
 ### Installation
 
