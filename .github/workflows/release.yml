@@ -1,0 +1,26 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+' # symver vmajor.minor.patch format only
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Set version in manifest
+        run: sed -i "s/0.0.1/$(git describe --tags `git rev-list --tags --max-count=1`)/" manifest.json
+
+      - name: Pack extension
+        run: zip -r -FS dnsdumpster-firefox-$(git describe --tags `git rev-list --tags --max-count=1`).zip *.js *.json icon.svg
+
+      - name: Create release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: dnsdumpster-firefox-*.zip
